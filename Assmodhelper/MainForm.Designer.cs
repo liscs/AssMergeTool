@@ -1,6 +1,6 @@
 ﻿namespace AssMergeTool
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -40,11 +40,13 @@
             this.DelAss2 = new System.Windows.Forms.Button();
             this.AddAss2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // AddAss1
             // 
-            this.AddAss1.Location = new System.Drawing.Point(387, 37);
+            this.AddAss1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.AddAss1.Location = new System.Drawing.Point(381, 37);
             this.AddAss1.Name = "AddAss1";
             this.AddAss1.Size = new System.Drawing.Size(43, 23);
             this.AddAss1.TabIndex = 1;
@@ -54,7 +56,8 @@
             // 
             // DelAss1
             // 
-            this.DelAss1.Location = new System.Drawing.Point(387, 66);
+            this.DelAss1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DelAss1.Location = new System.Drawing.Point(381, 66);
             this.DelAss1.Name = "DelAss1";
             this.DelAss1.Size = new System.Drawing.Size(43, 23);
             this.DelAss1.TabIndex = 2;
@@ -65,11 +68,13 @@
             // AssList1
             // 
             this.AssList1.AllowDrop = true;
+            this.AssList1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.AssList1.FormattingEnabled = true;
             this.AssList1.ItemHeight = 12;
-            this.AssList1.Location = new System.Drawing.Point(18, 37);
+            this.AssList1.Location = new System.Drawing.Point(12, 37);
             this.AssList1.Name = "AssList1";
-            this.AssList1.Size = new System.Drawing.Size(363, 88);
+            this.AssList1.Size = new System.Drawing.Size(363, 184);
             this.AssList1.TabIndex = 3;
             this.AssList1.SelectedIndexChanged += new System.EventHandler(this.AssList1_SelectedIndexChanged);
             this.AssList1.DragDrop += new System.Windows.Forms.DragEventHandler(this.AssList1_DragDrop);
@@ -77,18 +82,20 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(145, 214);
+            this.Save.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Save.Location = new System.Drawing.Point(381, 153);
             this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(55, 23);
+            this.Save.Size = new System.Drawing.Size(104, 51);
             this.Save.TabIndex = 8;
-            this.Save.Text = "Do it";
+            this.Save.Text = "执行合并";
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // Down1
             // 
+            this.Down1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Down1.Enabled = false;
-            this.Down1.Location = new System.Drawing.Point(387, 124);
+            this.Down1.Location = new System.Drawing.Point(381, 124);
             this.Down1.Name = "Down1";
             this.Down1.Size = new System.Drawing.Size(43, 23);
             this.Down1.TabIndex = 9;
@@ -98,8 +105,9 @@
             // 
             // Up1
             // 
+            this.Up1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Up1.Enabled = false;
-            this.Up1.Location = new System.Drawing.Point(387, 95);
+            this.Up1.Location = new System.Drawing.Point(381, 95);
             this.Up1.Name = "Up1";
             this.Up1.Size = new System.Drawing.Size(43, 23);
             this.Up1.TabIndex = 10;
@@ -109,8 +117,9 @@
             // 
             // Up2
             // 
+            this.Up2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Up2.Enabled = false;
-            this.Up2.Location = new System.Drawing.Point(805, 95);
+            this.Up2.Location = new System.Drawing.Point(442, 95);
             this.Up2.Name = "Up2";
             this.Up2.Size = new System.Drawing.Size(43, 23);
             this.Up2.TabIndex = 15;
@@ -120,8 +129,9 @@
             // 
             // Down2
             // 
+            this.Down2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Down2.Enabled = false;
-            this.Down2.Location = new System.Drawing.Point(805, 124);
+            this.Down2.Location = new System.Drawing.Point(442, 124);
             this.Down2.Name = "Down2";
             this.Down2.Size = new System.Drawing.Size(43, 23);
             this.Down2.TabIndex = 14;
@@ -132,11 +142,13 @@
             // AssList2
             // 
             this.AssList2.AllowDrop = true;
+            this.AssList2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AssList2.FormattingEnabled = true;
             this.AssList2.ItemHeight = 12;
-            this.AssList2.Location = new System.Drawing.Point(436, 37);
+            this.AssList2.Location = new System.Drawing.Point(491, 37);
             this.AssList2.Name = "AssList2";
-            this.AssList2.Size = new System.Drawing.Size(363, 88);
+            this.AssList2.Size = new System.Drawing.Size(363, 184);
             this.AssList2.TabIndex = 13;
             this.AssList2.SelectedIndexChanged += new System.EventHandler(this.AssList2_SelectedIndexChanged);
             this.AssList2.DragDrop += new System.Windows.Forms.DragEventHandler(this.AssList2_DragDrop);
@@ -144,7 +156,8 @@
             // 
             // DelAss2
             // 
-            this.DelAss2.Location = new System.Drawing.Point(805, 66);
+            this.DelAss2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DelAss2.Location = new System.Drawing.Point(442, 66);
             this.DelAss2.Name = "DelAss2";
             this.DelAss2.Size = new System.Drawing.Size(43, 23);
             this.DelAss2.TabIndex = 12;
@@ -154,7 +167,8 @@
             // 
             // AddAss2
             // 
-            this.AddAss2.Location = new System.Drawing.Point(805, 37);
+            this.AddAss2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.AddAss2.Location = new System.Drawing.Point(442, 37);
             this.AddAss2.Name = "AddAss2";
             this.AddAss2.Size = new System.Drawing.Size(43, 23);
             this.AddAss2.TabIndex = 11;
@@ -165,20 +179,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 9);
+            this.label1.Location = new System.Drawing.Point(310, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Input";
+            this.label1.Text = "被合并文件";
             // 
-            // Form1
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(489, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "并入目标文件";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 373);
+            this.ClientSize = new System.Drawing.Size(866, 261);
+            this.Controls.Add(this.AssList2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Up2);
             this.Controls.Add(this.Down2);
-            this.Controls.Add(this.AssList2);
             this.Controls.Add(this.DelAss2);
             this.Controls.Add(this.AddAss2);
             this.Controls.Add(this.Up1);
@@ -188,8 +213,9 @@
             this.Controls.Add(this.AssList1);
             this.Controls.Add(this.DelAss1);
             this.Controls.Add(this.AddAss1);
-            this.Name = "Form1";
-            this.Text = "ASS向右合并";
+            this.MinimumSize = new System.Drawing.Size(882, 300);
+            this.Name = "MainForm";
+            this.Text = "ASS对应向右合并";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -209,6 +235,7 @@
         private System.Windows.Forms.Button DelAss2;
         private System.Windows.Forms.Button AddAss2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

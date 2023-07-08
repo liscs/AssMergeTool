@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace AssMergeTool
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace AssMergeTool
         {
             var openFileDialog1 = new OpenFileDialog
             {
-                FileName = "Select a text file",
+                FileName = "sub.ass",
                 Filter = @"Ass files (*.ass)|*.ass",
                 Title = @"Open text file",
                 Multiselect = true
@@ -319,7 +319,7 @@ namespace AssMergeTool
         private void Down_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            if (button.Name == "Up1")
+            if (button.Name == "Down1")
             {
                 var tem = AssList1.SelectedItem;
                 AssList1.Items[AssList1.SelectedIndex] = AssList1.Items[AssList1.SelectedIndex + 1];
