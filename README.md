@@ -2,8 +2,8 @@
 
 
 # 感谢Assmodhelper
-
-****
+[Assmodhelper] (https://github.com/hoshinohikari/Assmodhelper
+Subtitle Edit (https://github.com/SubtitleEdit/subtitleedit
 |Author|HoshinoKun|
 |---|---
 |E-mail|hoshinokun@346pro.club
