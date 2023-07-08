@@ -334,7 +334,5 @@ namespace AssMergeTool
                 AssList2.SelectedIndex++;
             }
         }
-
-
     }
 }
